@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./swiper.min.css">
+    <script src="./swiper.min.js"></script>
+    <style>
+        .slider {
+            height: 300px;
+            background-color: red;
+        }
+
+        body {
+            background-color: pink;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .slider img {
+            height: 100%;
+            width: 100%;
+        }
+
+        p {
+            text-indent: 2em;
+            color: red;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slider"><img src="./1.jpg" alt=""></div>
+            <div class="swiper-slide slider"><img src="./2.jpg" alt=""></div>
+            <div class="swiper-slide slider"><img src="./3.jpg" alt=""></div>
+            <div class="swiper-slide slider"><img src="./4.jpg" alt=""></div>
+        </div>
+        <p>小芳，生日快乐，在你22岁即将到来的时刻，想和你说，认识你是一场缘分，因为你的出现我的生活变得和以前不一样，从此有了期待，祝你生日快乐</p>
+        <!-- 如果需要分页器 -->
+        <!-- <div class="swiper-pagination"></div> -->
+
+        <!-- 如果需要导航按钮 -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+
+        <!-- 如果需要滚动条 -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+        <!-- <audio autoplay="autoplay">
+            <source src="./2.mp3" type="audio/mp3" />
+        </audio>
+        <video src="./2.mp3"></video> -->
+        <audio src="./1.mp3" controls autoplay="autoplay">
+        </audio>
+        <!-- <audio controls="controls" autoplay="autoplay">
+                <source src="/i/song.ogg" type="audio/ogg" />
+                <source src="/i/song.mp3" type="audio/mpeg" />
+              Your browser does not support the audio element.
+              </audio> -->
+    </div>
+</body>
+
+<script>        
+    var mySwiper = new Swiper('.swiper-container', {
+        // direction: 'vertical', // 垂直切换选项
+        loop: true, // 循环模式选项
+        // freeMode: true,
+        freeModeMomentum: false,
+        autoplay: true,
+
+
+
+        // 如果需要分页器
+        // pagination: {
+        //     el: '.swiper-pagination',
+        // },
+
+        // 如果需要前进后退按钮
+        // navigation: {
+        //     nextEl: '.swiper-button-next',
+        //     prevEl: '.swiper-button-prev',
+        // },
+
+        // 如果需要滚动条
+        // scrollbar: {
+        //     el: '.swiper-scrollbar',
+        // },
+    })        
+</script>
+
+</html>
